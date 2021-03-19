@@ -17,7 +17,7 @@ driver = webdriver.Chrome(WEBDRIVER)
 
 link = input("Please enter the google meet url.")
 
-# Opens webpage and finds all space launches
+# Opens google login and input email and password
 driver.get("https://accounts.google.com/signin/v2/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
 time.sleep(1)
 driver.find_element_by_xpath('//*[@id="identifierId"]').send_keys("EMAIL HERE\n") # Change this
